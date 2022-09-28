@@ -19,6 +19,6 @@ public class UserController {
   public String ViewUsers(Model model){
     List<User> users = userService.findAll();
     model.addAttribute("users", users);
-    return "User/ViewUsers";
+    return "User/AdminUser";
   }
 }
