@@ -1,18 +1,63 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<meta charset="UTF-8">
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aref Ruqaa Ink&effect=neon|emboss|outline|3d">
+  <meta charset="UTF-8">
+  <title>Home Page</title>
+  <style>
+    .heading{
+      background: beige;
+      height: 35px;
+      padding-left: 10px;
+      font-family: "Aref Ruqaa Ink";
+      padding-bottom: 10px;
+      margin-left: -10px;
+      margin-right: -10px;
+    }
+    h3{
+      display: inline-block;
+      padding-left: 10px;
+      font-size:50px;
+      font-family: "Aref Ruqaa Ink";
+    }
+    table {
+      margin-top: 10px;
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+    tr:hover {
+      background-color: lightblue;
+    }
+  </style>
+</head>
 <body>
+<div>
+  <h3 class="font-effect-3d">Nailuv</h3>
+</div>
+<div class="heading">
+  <h2>Admin Page</h2>
+</div>
 <table>
   <tr>
-    <th>UserId</th>
-    <th>Username</th>
-    <th>Email</th>
+    <th style="width:10%">UserId</th>
+    <th style="width:25%">Username</th>
+    <th style="width:50%">Email</th>
+    <th style="width:15%">Remove</th>
   </tr>
   <tr th:each="user : ${users}">
     <td th:text="${user.UserId}">NA</td>
     <td th:text="${user.Username}">NA</td>
     <td th:text="${user.Email}">NA</td>
+    <td><button>DELETE</button></td>
   </tr>
 </table>
 </body>
 </html>
+
+
