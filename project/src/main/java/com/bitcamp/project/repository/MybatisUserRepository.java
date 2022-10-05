@@ -18,8 +18,4 @@ public class MybatisUserRepository implements UserRepository{
     return userMapper.findUsers();
   }
   
-  @Override
-  public void addUser(String Username, String Email, String Password) {
-  
-  }
 }

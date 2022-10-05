@@ -9,7 +9,7 @@ import java.util.List;
 
 @Service
 @RequiredArgsConstructor
-public class UserService1 implements UserService{
+public class UserService1 implements UserService {
   
   private final UserRepository userRepository;
   private User user;
@@ -17,10 +17,5 @@ public class UserService1 implements UserService{
   @Override
   public List<User> findAll() {
     return userRepository.findAll();
-  }
-  
-  @Override
-  public void addUser(User user) {
-  
   }
 }
