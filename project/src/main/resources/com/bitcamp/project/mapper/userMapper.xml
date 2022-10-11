@@ -8,4 +8,9 @@
         from users
     </select>
 
+    <delete id="deleteUser">
+        delete *
+        from users
+        where userid= #{id}
+    </delete>
 </mapper>
