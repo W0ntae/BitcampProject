@@ -18,4 +18,9 @@ public class UserService1 implements UserService {
   public List<User> findAll() {
     return userRepository.findAll();
   }
+  
+  @Override
+  public void deleteUser() {
+  
+  }
 }

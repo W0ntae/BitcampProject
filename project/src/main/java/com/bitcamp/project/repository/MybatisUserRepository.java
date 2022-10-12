@@ -18,4 +18,9 @@ public class MybatisUserRepository implements UserRepository{
     return userMapper.findUsers();
   }
   
+  @Override
+  public void deleteUser() {
+  
+  }
+  
 }
